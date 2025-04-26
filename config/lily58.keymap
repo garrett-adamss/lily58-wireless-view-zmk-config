@@ -101,11 +101,21 @@
         Arrow {
             display-name = "arrow";
             bindings = <
-&trans  &trans  &trans          &trans          &trans           &trans                    &trans  &trans     &trans          &trans     &trans  &trans
-&trans  &trans  &trans          &mmv MOVE_UP    &trans           &trans                    &trans  &trans     &msc SCRL_UP    &trans     &trans  &trans
-&trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans                    &trans  &mkp LCLK  &msc SCRL_DOWN  &mkp RCLK  &trans  &trans
-&trans  &trans  &trans          &trans          &trans           &trans  &trans    &trans  &trans  &trans     &mkp MCLK       &trans     &trans  &trans
-                                &trans          &trans           &trans  &trans    &trans  &trans  &trans     &trans
+&trans  &trans  &trans          &trans          &trans     &trans                    &trans  &trans         &trans         &trans             &trans           &trans
+&trans  &trans  &trans          &kp UP_ARROW    &trans     &trans                    &trans  &trans         &trans         &trans             &trans           &trans
+&trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &trans                    &trans  &kp RIGHT_GUI  &kp RIGHT_ALT  &kp RIGHT_CONTROL  &kp RIGHT_SHIFT  &trans
+&trans  &trans  &trans          &trans          &trans     &trans  &trans    &trans  &trans  &trans         &trans         &trans             &trans           &trans
+                                &trans          &trans     &trans  &trans    &trans  &trans  &trans         &trans
+            >;
+        };
+
+        layer_5 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
             >;
         };
     };
