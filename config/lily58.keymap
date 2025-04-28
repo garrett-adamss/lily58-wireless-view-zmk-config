@@ -15,12 +15,12 @@
 
         qwertyToggle {
             bindings = <&tog 3>;
-            key-positions = <52 55>;
+            key-positions = <43 42>;
         };
 
         arrowHold {
             bindings = <&mo 4>;
-            key-positions = <55 53>;
+            key-positions = <55 52>;
         };
     };
 
@@ -57,11 +57,11 @@
 
             display-name = "Lower";
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans     &trans     &trans           &trans    &trans    &trans
-&kp F1      &kp F2        &kp F3        &kp F4        &kp F5        &kp F6                          &kp F7     &kp F8     &kp F9           &kp F10   &kp F11   &kp F12
-&kp GRAVE   &kp EXCL      &kp AT        &kp HASH      &kp DOLLAR    &kp PRCNT                       &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp TILDE
-&trans      &trans        &trans        &trans        &trans        &trans        &trans    &trans  &trans     &kp MINUS  &kp KP_PLUS      &kp LBRC  &kp RBRC  &kp PIPE
-                                        &trans        &trans        &trans        &trans    &trans  &trans     &trans     &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                  &none      &none      &none            &none     &none     &none
+&kp F1      &kp F2        &kp F3        &kp F4        &kp F5        &kp F6                        &kp F7     &kp F8     &kp F9           &kp F10   &kp F11   &kp F12
+&kp GRAVE   &kp EXCL      &kp AT        &kp HASH      &kp DOLLAR    &kp PRCNT                     &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp TILDE
+&none       &none         &none         &none         &none         &none         &none    &none  &none      &kp MINUS  &kp KP_PLUS      &kp LBRC  &kp RBRC  &kp PIPE
+                                        &none         &none         &none         &none    &none  &none      &none      &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -77,11 +77,11 @@
 
             display-name = "Mouse";
             bindings = <
-&trans  &trans  &trans          &trans          &trans           &trans                    &trans  &trans     &trans          &trans     &trans  &trans
-&trans  &trans  &trans          &mmv MOVE_UP    &trans           &trans                    &trans  &trans     &msc SCRL_UP    &trans     &trans  &trans
-&trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans                    &trans  &mkp LCLK  &msc SCRL_DOWN  &mkp RCLK  &trans  &trans
-&trans  &trans  &trans          &trans          &trans           &trans  &trans    &trans  &trans  &trans     &mkp MCLK       &trans     &trans  &trans
-                                &trans          &trans           &trans  &trans    &trans  &trans  &trans     &trans
+&none  &none  &none           &none           &none            &none                  &none  &none      &none           &none      &none  &none
+&none  &none  &none           &mmv MOVE_UP    &none            &none                  &none  &none      &msc SCRL_UP    &none      &none  &none
+&none  &none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none                  &none  &mkp LCLK  &msc SCRL_DOWN  &mkp RCLK  &none  &none
+&none  &none  &none           &none           &none            &none  &none    &none  &none  &none      &mkp MCLK       &none      &none  &none
+                              &none           &none            &none  &none    &none  &none  &none      &none
             >;
         };
 
@@ -101,11 +101,11 @@
         Arrow {
             display-name = "arrow";
             bindings = <
-&trans  &trans  &trans          &trans          &trans     &trans                    &trans  &trans         &trans         &trans             &trans           &trans
-&trans  &trans  &trans          &kp UP_ARROW    &trans     &trans                    &trans  &trans         &trans         &trans             &trans           &trans
-&trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &trans                    &trans  &kp RIGHT_GUI  &kp RIGHT_ALT  &kp RIGHT_CONTROL  &kp RIGHT_SHIFT  &trans
-&trans  &trans  &trans          &trans          &trans     &trans  &trans    &trans  &trans  &trans         &trans         &trans             &trans           &trans
-                                &trans          &trans     &trans  &trans    &trans  &trans  &trans         &trans
+&none  &none  &none           &none           &none      &none                  &none  &none          &none          &none              &none            &none
+&none  &none  &none           &kp UP_ARROW    &none      &none                  &none  &none          &none          &none              &none            &none
+&none  &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &none                  &none  &kp RIGHT_GUI  &kp RIGHT_ALT  &kp RIGHT_CONTROL  &kp RIGHT_SHIFT  &none
+&none  &none  &none           &none           &none      &none  &none    &none  &none  &none          &none          &none              &none            &none
+                              &none           &none      &none  &none    &none  &none  &none          &none
             >;
         };
 
