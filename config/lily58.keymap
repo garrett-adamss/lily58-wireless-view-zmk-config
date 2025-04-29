@@ -4,13 +4,12 @@
  * SPDX-License-Identifier: MIT
  */
 
-#include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/keys.h>
-
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1600  // default: 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // default: 10
 
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
 / {
@@ -81,11 +80,11 @@
 
             display-name = "Mouse";
             bindings = <
-&none  &none  &none           &none           &none            &none                  &none  &none      &none           &none      &none  &none
-&none  &none  &none           &mmv MOVE_UP    &none            &none                  &none  &none      &msc SCRL_UP    &none      &none  &none
-&none  &none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none                  &none  &mkp LCLK  &msc SCRL_DOWN  &mkp RCLK  &none  &none
-&none  &none  &none           &none           &none            &none  &none    &none  &none  &none      &mkp MCLK       &none      &none  &none
-                              &none           &none            &none  &none    &none  &none  &none      &none
+&none  &none  &none           &none           &none            &none                  &none   &none      &none           &none      &none  &none
+&none  &none  &none           &mmv MOVE_UP    &none            &none                  &none   &none      &msc SCRL_UP    &none      &none  &none
+&none  &none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none                  &none   &mkp LCLK  &msc SCRL_DOWN  &mkp RCLK  &none  &none
+&none  &none  &none           &none           &none            &none  &none    &none  &none   &none      &mkp MCLK       &none      &none  &none
+                              &none           &none            &none  &none    &none  &tog 0  &none      &none
             >;
         };
 
