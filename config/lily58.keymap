@@ -39,6 +39,22 @@
         };
     };
 
+    behaviors {
+        home_row_mod: home_row_mod {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOME_ROW_MOD";
+            bindings = <&none>, <&none>;
+
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <280>;
+            require-prior-idle-ms = <150>;
+            quick-tap-ms = <175>;
+            hold-trigger-key-positions = <28 27 26 25 31 32 33 34>;
+            hold-trigger-on-release;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
