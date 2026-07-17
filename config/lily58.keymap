@@ -24,12 +24,12 @@
         };
 
         arrowHold {
-            bindings = <&mo 3>;
+            bindings = <&mo 5>;
             key-positions = <53 54>;
         };
 
         toggleHomerow {
-            bindings = <&tog 4>;
+            bindings = <&tog 3>;
             key-positions = <53 54 42>;
         };
 
@@ -44,7 +44,7 @@
         };
 
         homeroomToggle {
-            bindings = <&tog 6>;
+            bindings = <&tog 7>;
             key-positions = <43 54 53>;
         };
     };
@@ -140,17 +140,6 @@
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
-        Arrow {
-            display-name = "arrow";
-            bindings = <
-&trans  &none  &none           &none           &none      &none                     &none       &none            &none          &none      &none          &none
-&trans  &none  &none           &kp UP_ARROW    &none      &none                     &bt BT_CLR  &bt BT_PRV       &bt BT_NXT     &none      &none          &none
-&trans  &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &none                     &none       &kp RIGHT_SHIFT  &kp RIGHT_ALT  &kp RCTRL  &kp RIGHT_GUI  &none
-&trans  &none  &none           &none           &none      &none   &none     &none   &none       &none            &none          &none      &none          &trans
-                               &trans          &trans     &trans  &trans    &trans  &trans      &trans           &trans
-            >;
-        };
-
         homerow+key38 {
             display-name = "home-38";
             bindings = <
@@ -158,7 +147,7 @@
 &none          &kp Q            &kp W                &kp F            &kp P              &kp B                         &kp J  &kp L               &kp U             &kp Y         &kp SEMICOLON     &none
 &kp BACKSPACE  &hml LEFT_GUI A  &hml LEFT_CONTROL R  &hml LEFT_ALT S  &hml LEFT_SHIFT T  &kp G                         &kp M  &hmr RIGHT_SHIFT N  &hmr RIGHT_ALT E  &hmr RCTRL I  &hmr RIGHT_GUI O  &kp SQT
 &none          &kp Z            &kp X                &kp C            &kp D              &kp V    &trans       &trans  &kp K  &kp H               &kp COMMA         &kp DOT       &kp FSLH          &none
-                                                     &none            &kp CAPS           &kp TAB  &kp SPACE    &mo 5   &mo 3  &kp DEL             &none
+                                                     &none            &kp CAPS           &kp TAB  &kp SPACE    &mo 5   &mo 6  &kp DEL             &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -171,6 +160,17 @@
 &kp ESC  &hml LEFT_GUI NUMBER_1  &hml LCTRL NUMBER_2  &hml LEFT_ALT NUMBER_3  &hml LEFT_SHIFT NUMBER_4  &kp N5                        &kp N6     &hmr RIGHT_SHIFT NUMBER_7  &hmr RIGHT_ALT NUMBER_8  &hmr RCTRL NUMBER_9  &hmr RIGHT_GUI NUMBER_0  &kp GRAVE
 &trans   &kp K_MUTE              &kp C_VOLUME_DOWN    &kp C_VOL_UP            &kp F11                   &kp F12  &trans       &trans  &kp EQUAL  &kp MINUS                  &kp FSLH                 &kp LBKT             &kp RBKT                 &trans
                                                       &trans                  &kp LA(LC(DELETE))        &trans   &kp ENTER    &trans  &trans     &trans                     &trans
+            >;
+        };
+
+        Arrow {
+            display-name = "arrow";
+            bindings = <
+&trans  &none  &none           &none           &none      &none                     &none       &none            &none          &none      &none          &none
+&trans  &none  &none           &kp UP_ARROW    &none      &none                     &bt BT_CLR  &bt BT_PRV       &bt BT_NXT     &none      &none          &none
+&trans  &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &none                     &none       &kp RIGHT_SHIFT  &kp RIGHT_ALT  &kp RCTRL  &kp RIGHT_GUI  &none
+&trans  &none  &none           &none           &none      &none   &none     &none   &none       &none            &none          &none      &none          &trans
+                               &trans          &trans     &trans  &trans    &trans  &trans      &trans           &trans
             >;
         };
 
@@ -187,7 +187,7 @@
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
-        layer_7 {
+        lower_copy {
             display-name = "lower_home";
             bindings = <
 &bt BT_CLR       &bt BT_SEL 0   &bt BT_SEL 1      &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                                        &none      &none      &none            &none     &none     &none
