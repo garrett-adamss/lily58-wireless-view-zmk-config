@@ -158,7 +158,7 @@
 &trans   &trans                  &trans               &trans                  &trans                    &trans                        &trans     &trans                     &trans                   &trans               &trans                   &trans
 &trans   &kp F1                  &kp F2               &kp F3                  &kp F4                    &kp F5                        &kp F6     &kp F7                     &kp F8                   &kp F9               &kp F10                  &trans
 &kp ESC  &hml LEFT_GUI NUMBER_1  &hml LCTRL NUMBER_2  &hml LEFT_ALT NUMBER_3  &hml LEFT_SHIFT NUMBER_4  &kp N5                        &kp N6     &hmr RIGHT_SHIFT NUMBER_7  &hmr RIGHT_ALT NUMBER_8  &hmr RCTRL NUMBER_9  &hmr RIGHT_GUI NUMBER_0  &kp GRAVE
-&trans   &kp K_MUTE              &kp C_VOLUME_DOWN    &kp C_VOL_UP            &kp F11                   &kp F12  &trans       &trans  &kp EQUAL  &kp MINUS                  &kp FSLH                 &kp LBKT             &kp RBKT                 &trans
+&trans   &kp K_MUTE              &kp K_VOLUME_DOWN    &kp K_VOLUME_UP         &kp F11                   &kp F12  &trans       &trans  &kp EQUAL  &kp MINUS                  &kp FSLH                 &kp LBKT             &kp RBKT                 &trans
                                                       &trans                  &kp LA(LC(DELETE))        &trans   &kp ENTER    &trans  &trans     &trans                     &trans
             >;
         };
