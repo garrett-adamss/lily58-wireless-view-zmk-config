@@ -14,15 +14,6 @@
 
 &mmv { time-to-max-speed-ms = <150>; };
 
-&mt {
-    flavor = "balanced";
-    tapping-term-ms = <250>;
-    quick-tap-ms = <175>;
-    require-prior-idle-ms = <150>;
-    hold-trigger-key-positions = <28 27 26 25 31 32 33 34>;
-    hold-trigger-on-release;
-};
-
 / {
     combos {
         compatible = "zmk,combos";
@@ -44,17 +35,32 @@
     };
 
     behaviors {
-        home_row_mod: home_row_mod {
+        // Timeless home-row mods: left mods only hold for right-hand keys.
+        // Positions are 0-indexed across the Lily58 keymap (58 keys).
+        // Right hand: cols N6-` / J-' / MB2-RSFT / RAISE-RALT
+        hml: home_row_mod_left {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOME_ROW_MOD";
-            bindings = <&kp>, <&kp>;
-
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <250>;
-            require-prior-idle-ms = <150>;
+            tapping-term-ms = <280>;
             quick-tap-ms = <175>;
-            hold-trigger-key-positions = <28 27 26 25 31 32 33 34>;
+            require-prior-idle-ms = <150>;
+            bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 43 44 45 46 47 48 49 54 55 56 57>;
+            hold-trigger-on-release;
+        };
+
+        // Right mods only hold for left-hand keys.
+        // Left hand: ESC-N5 / TAB-G / LSFT-MB1 / LALT-SPACE
+        hmr: home_row_mod_right {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 39 40 41 42 50 51 52 53>;
             hold-trigger-on-release;
         };
     };
@@ -87,7 +93,7 @@
             bindings = <
 &trans  &kp N1          &kp N2              &kp N3          &kp N4            &kp N5                    &kp N6  &kp N7             &kp N8           &kp N9       &kp N0           &kp GRAVE
 &trans  &kp Q           &kp W               &kp F           &kp P             &kp B                     &kp J   &kp L              &kp U            &kp Y        &kp SEMICOLON    &kp MINUS
-&trans  &mt LEFT_GUI A  &mt LEFT_CONTROL R  &mt LEFT_ALT S  &mt LEFT_SHIFT T  &kp G                     &kp M   &mt RIGHT_SHIFT N  &mt RIGHT_ALT E  &mt RCTRL I  &mt RIGHT_GUI O  &kp SQT
+&trans  &hml LEFT_GUI A  &hml LEFT_CONTROL R  &hml LEFT_ALT S  &hml LEFT_SHIFT T  &kp G                     &kp M   &hmr RIGHT_SHIFT N  &hmr RIGHT_ALT E  &hmr RCTRL I  &hmr RIGHT_GUI O  &kp SQT
 &trans  &kp Z           &kp X               &kp C           &kp D             &kp V   &trans    &trans  &kp K   &kp H              &kp COMMA        &kp DOT      &kp FSLH         &trans
                                             &trans          &trans            &trans  &trans    &trans  &trans  &trans             &trans
             >;
