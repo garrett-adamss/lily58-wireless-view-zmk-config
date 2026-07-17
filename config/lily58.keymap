@@ -33,7 +33,7 @@
             key-positions = <53 54 42>;
         };
 
-        m2 {
+        m1 {
             bindings = <&mkp MB1>;
             key-positions = <28 27>;
         };
