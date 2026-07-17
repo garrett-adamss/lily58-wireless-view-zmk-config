@@ -34,12 +34,12 @@
         };
 
         m2 {
-            bindings = <&mkp MB2>;
+            bindings = <&mkp MB1>;
             key-positions = <28 27>;
         };
 
-        m1 {
-            bindings = <&mkp MB1>;
+        m2 {
+            bindings = <&mkp MB2>;
             key-positions = <27 26>;
         };
 
