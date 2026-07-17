@@ -44,7 +44,7 @@
         };
 
         homeroomToggle {
-            bindings = <&tog 7>;
+            bindings = <&tog 6>;
             key-positions = <43 54 53>;
         };
     };
@@ -147,7 +147,7 @@
 &none          &kp Q            &kp W                &kp F            &kp P              &kp B                         &kp J  &kp L               &kp U             &kp Y         &kp SEMICOLON     &none
 &kp BACKSPACE  &hml LEFT_GUI A  &hml LEFT_CONTROL R  &hml LEFT_ALT S  &hml LEFT_SHIFT T  &kp G                         &kp M  &hmr RIGHT_SHIFT N  &hmr RIGHT_ALT E  &hmr RCTRL I  &hmr RIGHT_GUI O  &kp SQT
 &none          &kp Z            &kp X                &kp C            &kp D              &kp V    &trans       &trans  &kp K  &kp H               &kp COMMA         &kp DOT       &kp FSLH          &none
-                                                     &none            &kp CAPS           &kp TAB  &kp SPACE    &mo 5   &mo 6  &kp DEL             &none
+                                                     &none            &kp CAPS           &kp TAB  &kp SPACE    &mo 4   &mo 5  &kp DEL             &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
