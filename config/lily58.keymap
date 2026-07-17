@@ -32,6 +32,16 @@
             bindings = <&tog 5>;
             key-positions = <53 54 42>;
         };
+
+        m2 {
+            bindings = <&mkp MB2>;
+            key-positions = <28 27>;
+        };
+
+        m1 {
+            bindings = <&mkp MB1>;
+            key-positions = <27 26>;
+        };
     };
 
     behaviors {
@@ -128,22 +138,22 @@
         Arrow {
             display-name = "arrow";
             bindings = <
-&trans  &none  &none           &none           &none      &none                     &none   &none            &none          &none      &none          &none
-&trans  &none  &none           &kp UP_ARROW    &none      &none                     &none   &none            &none          &none      &none          &none
-&trans  &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &none                     &none   &kp RIGHT_SHIFT  &kp RIGHT_ALT  &kp RCTRL  &kp RIGHT_GUI  &none
-&trans  &none  &none           &none           &none      &none   &none     &none   &none   &none            &none          &none      &none          &trans
-                               &trans          &trans     &trans  &trans    &trans  &trans  &trans           &trans
+&trans  &none  &none           &none           &none      &none                     &none       &none            &none          &none      &none          &none
+&trans  &none  &none           &kp UP_ARROW    &none      &none                     &bt BT_CLR  &bt BT_PRV       &bt BT_NXT     &none      &none          &none
+&trans  &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &none                     &none       &kp RIGHT_SHIFT  &kp RIGHT_ALT  &kp RCTRL  &kp RIGHT_GUI  &none
+&trans  &none  &none           &none           &none      &none   &none     &none   &none       &none            &none          &none      &none          &trans
+                               &trans          &trans     &trans  &trans    &trans  &trans      &trans           &trans
             >;
         };
 
         homerow+key38 {
             display-name = "home-38";
             bindings = <
-&none          &none            &none                &none            &none              &none                        &none  &none               &none             &none         &none             &none
-&none          &kp Q            &kp W                &kp F            &kp P              &kp B                        &kp J  &kp L               &kp U             &kp Y         &kp SEMICOLON     &none
-&kp BACKSPACE  &hml LEFT_GUI A  &hml LEFT_CONTROL R  &hml LEFT_ALT S  &hml LEFT_SHIFT T  &kp G                        &kp M  &hmr RIGHT_SHIFT N  &hmr RIGHT_ALT E  &hmr RCTRL I  &hmr RIGHT_GUI O  &kp SQT
-&none          &kp Z            &kp X                &kp C            &kp D              &kp V    &none        &none  &kp K  &kp H               &kp COMMA         &kp DOT       &kp FSLH          &none
-                                                     &none            &kp CAPS           &kp TAB  &kp SPACE    &mo 5  &mo 3  &kp DEL             &none
+&none          &none            &none                &none            &none              &none                         &none  &none               &none             &none         &none             &none
+&none          &kp Q            &kp W                &kp F            &kp P              &kp B                         &kp J  &kp L               &kp U             &kp Y         &kp SEMICOLON     &none
+&kp BACKSPACE  &hml LEFT_GUI A  &hml LEFT_CONTROL R  &hml LEFT_ALT S  &hml LEFT_SHIFT T  &kp G                         &kp M  &hmr RIGHT_SHIFT N  &hmr RIGHT_ALT E  &hmr RCTRL I  &hmr RIGHT_GUI O  &kp SQT
+&none          &kp Z            &kp X                &kp C            &kp D              &kp V    &trans       &trans  &kp K  &kp H               &kp COMMA         &kp DOT       &kp FSLH          &none
+                                                     &none            &kp CAPS           &kp TAB  &kp SPACE    &mo 5   &mo 3  &kp DEL             &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
