@@ -29,7 +29,7 @@
         };
 
         toggleHomerow {
-            bindings = <&tog 5>;
+            bindings = <&tog 4>;
             key-positions = <53 54 42>;
         };
 
